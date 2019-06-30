@@ -1,8 +1,7 @@
 import path from 'path'
-
+import HtmlWebpackPlugin from 'html-webpack-plugin' 
 const src  = path.resolve(__dirname, 'src')
 const dist = path.resolve(__dirname, 'dist')
-
 export default {
   mode: 'development',
   entry: src + '/index.jsx',
@@ -17,8 +16,20 @@ export default {
       {
         test: /\.jsx$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
-      }
+        loader: 'babel-loader',
+      },
+      {  
+        test: /\.(png|jpg|gif)$/,
+          loader: 'file-loader',
+       options: {},
+      } ,
+    {
+        test: /\.css$/,
+    use: [
+        'style-loader','css-loader',
+        ],
+        },
+       
     ]
   },
 
@@ -26,5 +37,10 @@ export default {
     extensions: ['.js', '.jsx']
   },
 
-  plugins: []
+  plugins:[
+      new HtmlWebpackPlugin({
+      template: src + '/index.html',
+      filename: 'index.html'
+      }),
+  ]
 }

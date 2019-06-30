@@ -1,95 +1,97 @@
-.header{
-    position: relative;
-
+#start{
+    text-align:center;
+    font-size:32px;
+    font-family:bold;
 }
-.header p{
-  position: absolute;
-  font-size:64px;
-  color:white;
-  font-weight:bold;
-  top:10%;
-  left:53%;
-  height:240px;
+#me{
+    float:left;
+    width:25%;
+    border-radius:50%;
+    margin-bottom:20%;
+    margin-right:10%;
 }
-.header ins{
-  position:absolute;
-  color: white;
-  top:96%;
-  right:38%;
-  font-size:19px;
-  background-size:auto 100%;
-}
-.header img{
-  height:100%;
-  width:100%;
-}
-body{
-    background-color: #003366;
+#contact{
+    margin-left:auto;
+    margin-right:auto;
+    font-size:32px;
     color:white;
 }
-.main-top{
-  height:160px;
-  float: left;
-  font-size: 20px;
-  width: 20%;
-  background-color:rgba(130,140,60,0.7);
+a{
+    font-weight:bold;
+    color:white;
 }
-.main-top2{
-float:right;
-width:80%;
-
+a:hover{
+    text-decoration:underline;
+    color:green;
 }
-.about{
-  width: 50%;
-  height:40%;
-  float:left;
-  font-size: 40px;
-  color: inherit;
-  padding-top:24px;
-  font-weight:bold;
-  
+li{
+    margin:5%;
 }
-#about-body{
-width:70%;
-font-size:24px;
-float:right;
-margin:15px;
+.name{
+    z-index:1;
+    position: absolute;
+    font-size:68px;
+    color:white;
+    font-weight:bold;
+    top:2%;
+    left:53%;
+    height:200px;
+    animation-name: fadein;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
 }
-#btns{
-width:24.5%;
-height:50px;
-background-color:rgba(0,190,200,0.6);
-color:rgba(255,255,255,0.9);
-font-weight:bold;
-font-size:40px;
-border-radius:7px;
--webkit-text-stroke: 2px #000;
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.info{
-    height:500px;
+img{
+    border-radius:10px;
+    position: relative;
+    height:100%;
     width:100%;
-    padding:10px;
-    margin-top:30px;
 }
-.skill{
-    text-align:center;
-    padding:30px;
+body{
+    background-color: #08298A;
+    color:white;
+}
+
+#about-body{
+    width:80%;
+    font-size:32px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:3%;
+}
+button{
+    margin:5px;
+    margin-top:10px;
+    width:24%;
+    height:50px;
+    background-color:rgba(0,190,200,0.6);
+    color:rgba(255,255,255,0.9);
     font-weight:bold;
     font-size:40px;
+    border-radius:30px;
+    -webkit-text-stroke: 2px #000;
 }
 .skill-main{
-    padding:20px;
-    font-size:30px;
+    padding:3%;
+    font-size:32px;
 }
 th{
-    height:3px;
+    height:5px;
     width:240px;
+}
+tr{
+    padding:3%;
 }
 #sub{
     width:430px;
 }
-.skill-main p{
-    float:right;
-    font-size:20px;
-}
-    
+
