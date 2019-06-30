@@ -20,7 +20,7 @@ export default {
       },
       {  
         test: /\.(png|jpg|gif)$/,
-          loader: 'file-loader',
+         loader: 'file-loader',
        options: {},
       } ,
     {
