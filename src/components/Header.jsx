@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './sd1.jpg';
 class Header extends React.Component{
     render(){
     return(
@@ -7,7 +6,7 @@ class Header extends React.Component{
       <p className="name">
        Kosuke Sakuma
       </p>
-<img src={logo} />
+<img src="./sd1.jpg" />
     </div>
     );
   }

@@ -1,5 +1,4 @@
 import React from 'react';
-import me from './sd2.jpg';
 class Button extends React.Component {
   constructor(props){
   super(props);
@@ -56,9 +55,9 @@ this.state={value:(<div id="start">上のボタンをクリックしてね！</d
 
   showPage1() {
     this.setState({ value: (<div id="about-body">
-    <img id="me" src={me} />
-明治大学理工学部情報科学科の3年生です。林教授の人工知能研究室に配属しており、ビッグデータの解析やブラックボックスの透明化の研究を行なっています。
-プログラミングは大学から始めたので実装経験等皆無に近い状況です。このポートフォリオはこれを是正するための手段の一つです。LFrog
+    <img id="me" src="./sd2.jpg" />
+明治大学理工学部情報科学科の3年生です。林陽一教授の人工知能研究室に配属しており、ビッグデータの解析やブラックボックスの透明化の研究を行なっています。
+プログラミングは大学から始めたので実装経験はほとんどなく、授業で触れた程度です。このポートフォリオはこれを是正するための手段の一つです。LFrog
     </div>) });
   }
 
